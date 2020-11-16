@@ -1,0 +1,119 @@
+@media screen and (max-width: 1023px) {
+    .progress-bar {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-content .logo {
+        height         : 90px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+    }
+    .menu-content .logo a span {
+        display     : flex;
+        height      : 90px;
+        line-height : 1;
+        align-items : center;
+        padding-left: 10px;
+        color       : #fff;
+    }
+    .landing .content .text .logo a img {
+        display: block;
+        height : auto;
+        width  : 100%;
+    }
+    .landing .content {
+        width : calc(100% - 20px);
+        height: 100%;
+    }
+    .landing,
+    .landing .opacity {
+        height: 100%;
+    }
+    .landing .content .text {
+        width      : calc(100% - 20px);
+        padding    : 10px;
+        text-shadow: 5px 5px 4px black;
+    }
+    .landing .pr-view {
+        position             : absolute;
+        right                : 0;
+        width                : 100%;
+        height               : 100%;
+        background-color     : transparent;
+        background-image     : url("../img/background/hero-start-mobile.png");
+        background-position  : bottom right 100%;
+        background-repeat    : no-repeat;
+        background-attachment: fixed;
+        background-size      : cover;
+        opacity              : .2;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    code {
+        white-space: initial;
+        width: auto;
+    }
+    .features .content {
+        width: calc(100% - 20px);
+    }
+    .features .some-features {
+        display: none;
+    }
+    .support .column-centered {
+        grid-template-columns: 1fr;
+    }
+    .features .column-centered .button {
+        margin: 50px 0;
+        bottom: 40px;
+    }
+    .support .column-centered .column {
+        width : 100%;
+        height: 60vh;
+    }
+    .download .download-margin .downloads-inner {
+        flex-direction: column;
+    }
+    .download .download-margin .downloads {
+        margin: 10px 0;
+    }
+    .contact hr,
+    .download .download-margin hr,
+    .features hr {
+        width: 106px;
+    }
+    .download .download-margin {
+        width: calc(100% - 20px);
+    }
+    .contact,
+    .contact .content,
+    .contact .content .form {
+        width: calc(100% - 20px);
+    }
+    .contact .content .contact-text {
+        padding-left: 0;
+        width       : calc(100% - 20px);
+        text-align  : center;
+        margin-top  : 60px;
+    }
+    .contact .content .contact-text {
+        width: 275px;
+    }
+    .contact {
+        margin: 0 auto;
+    }
+    .footer {
+        position: relative;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .menu-content .logo {
+        width: 200px;
+    }
+}
