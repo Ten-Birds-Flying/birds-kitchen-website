@@ -53,25 +53,25 @@
 			}
 		} );
 
-		var offset = 100,
-			scroll_top_duration = 700,
-			$back_to_top = $( '.btn-top' ),
-			$thedial = $( '.dial' ),
-			$progress_bar = $( '.progress-bar' );
+		var offset              = 100,
+		    scroll_top_duration = 700,
+		    $back_to_top        = $( '.btn-top' ),
+		    $thedial            = $( '.dial' ),
+		    $progress_bar       = $( '.progress-bar' );
 
 		// Initialize the progress dial
 		$thedial.knob( {
-			'min': 0,
-			'max': 100,
-			'width': 50,
-			'height': 50,
-			'fgColor': 'rgba(255, 255, 255, 0.5)',
-			'bgColor': '#6d7887',
-			'skin': 'tron',
-			'thickness': .2,
-			'displayInput': false,
+			'min'           : 0,
+			'max'           : 100,
+			'width'         : 50,
+			'height'        : 50,
+			'fgColor'       : 'rgba(255, 255, 255, 0.5)',
+			'bgColor'       : '#6d7887',
+			'skin'          : 'tron',
+			'thickness'     : .2,
+			'displayInput'  : false,
 			'displayPreview': false,
-			'readOnly': true
+			'readOnly'      : true
 		} );
 
 		$( window ).scroll( function() {
@@ -81,8 +81,8 @@
 
 			// Get the window position and set it to a variale
 			var s = $( window ).scrollTop(),
-				d = $( document ).height(),
-				c = $( window ).height();
+			    d = $( document ).height(),
+			    c = $( window ).height();
 			scrollPercent = ( s / ( d - c ) ) * 100;
 
 			// Bind the window position to the progress dial
